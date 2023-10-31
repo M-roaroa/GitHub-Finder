@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #1c79d1; /* 좀 더 진하게 */
+}
+.header-title { 
+    margin: 13px;
+    font-size: 22px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    margin: 20px;
+    max-width: 1100px;
+    min-width: 800px;
+    /* min-height: 990px; */
+}
+
+
+/* search */
+.search-container {
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.search-title {
+    padding-bottom: 5px;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.search-content {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 350;
+    color: darkgray;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 30px;
+    border: 1px solid darkgray;
+    /* flex: 1; */
+}
+
+/* .search-bottun {
+    height: 30px;
+    border: 1px solid darkgray;
+    cursor: pointer;
+} */
+
+
+/* user */
+.user-container {
+    border: 1px solid darkgray;
+    margin-bottom: 25px;
+    display: flex;
+    padding: 20px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px;
+}
+
+.user-avatar-img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.profile-link-Btn {
+    width: 250px;
+    height: 35px;
+    background-color: #1c79d1;
+    border-radius: 15px;
+    border-width: 0;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+}
+
+.user-container2 {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.user-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 10px 20px 10px;
+}
+
+.user-status-repos, .user-status-gists,
+.user-status-followers, .user-status-following {
+    border: 1px solid black;
+    border-width: 0;
+    margin-right: 10px;
+    display: flex;
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-status-repos {
+    background-color: rgb(158, 178, 205);
+}
+
+.user-status-gists {
+    background-color: rgb(170, 179, 187);
+}
+
+.user-status-followers {
+    background-color: rgb(158, 205, 201);
+}
+
+.user-status-following{
+    background-color: rgb(202, 218, 189);
+}
+
+.user-info {
+    height: 60%;
+    display: grid;
+    justify-items: stretch;
+    border: 1px solid darkgray;
+    margin-left: 10px;
+
+}
+
+.user-info-company, .user-info-web,
+.user-info-location, .user-info-since {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 420;
+    border-bottom: 1px solid darkgray;
+}
+
+.user-info-since {
+    border-bottom: none;
+}
+
+/* repository */
+.repos-container {
+    border: 1px solid darkgray;
+}
