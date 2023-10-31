@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Finder</title>
     <link rel="stylesheet" href="style.css"/>
-    <link 
+    <!-- <script type="module" src="app.js"></script> -->
 </head>
 <body>  
-    <header id="header" class="header"> <!-- 새로고침은... ?-->
+    <header id="header" class="header"> 
         <div class="header-title" id="header-title">GitHub Finder</div>
     </header>
 
     <main id="main" class="main">
         <div class="search-container">
         <!-- user 검색-->
-            <div class="search-title">Search GitHub Users</div>
+            <div id="github-username" class="search-title">Search GitHub Users</div>
             <div class="search-content">Enter a username to fetch a user profile and repos</div>
             <input id="search" class="search" type="text" placeholder="Search a Guthub User" />
         </div>
@@ -23,7 +23,7 @@
         <div class="user-container"> 
             <!-- user 정보-->
             <div class="user-profile">
-                <img class="user-avatar-img" src="user-avater.png" />
+                <img class="user-avatar-img" src="user-avatar.png" />
                 <button class="profile-link-Btn">View Profile</button>
             </div>
             <div class="user-container2">
@@ -43,14 +43,15 @@
         </div> 
 
         <div class="repos-container"> 
-        <!-- 레포지토리 -->repo
+            <h2>Latest Repos</h2>
+            <div id="repos"></div>
         </div>
 
     </main>
     
     <!-- <footer class="footer">GitHub Footer</footer> -->
 
-    <script type="module" src="script.js"></script>
-    <script  src="token.js"></script>
+    <script src="app.js"></script>
+    <!-- <script type="module" src="token.js"></script> -->
 </body>
 </html>
