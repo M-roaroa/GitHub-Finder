@@ -163,6 +163,57 @@
 }
 
 /* repository */
-.repos-container {
-    border: 1px solid darkgray;
+#repos {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
+.repo {
+    border: 1px solid darkgray;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15% 10px 10px;
+}
+
+.repo-title {
+    color: #1c79d1;
+    padding-left: 15px;
+    font-size: large;
+    font-weight: 600;
+}
+.repo-info {
+    display: flex;
+    justify-content: flex-start;
+}
+.stars, .watchers, .forks {
+    border-radius: 3px;
+    margin: 0px 5px 0px 5px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    font-size: small;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.stars {
+    background-color: rgb(158, 178, 205);
+}
+.watchers {
+    background-color: rgb(170, 179, 187);
+}
+.forks {
+    background-color: rgb(158, 205, 201);
+}
+
+.stars-count, .wachers-count, .forks-count {
+    margin-left: 5px;
+}
+
+/* .footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+} */
